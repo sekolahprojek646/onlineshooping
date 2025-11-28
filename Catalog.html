@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog - OrangeShop</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff7f0;
+        }
+
+        /* HEADER */
+        header {
+            background: #ff7f00;
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* SEARCH BAR */
+        .search-box {
+            display: flex;
+            width: 300px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            outline: none;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .search-box button {
+            padding: 8px 12px;
+            background: #cc6500;
+            border: none;
+            color: white;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+
+        /* SIDEBAR */
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 220px;
+            background: #ffe0c2;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .sidebar h3 {
+            margin-top: 0;
+        }
+
+        .sidebar ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+            padding: 8px;
+            background: #ffb366;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .sidebar ul li:hover {
+            background: #ff9900;
+        }
+
+        /* PRODUCT GRID */
+        .products {
+            flex: 1;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product-card h4 {
+            margin: 10px 0 5px;
+        }
+
+        .product-card button {
+            background: #ff7f00;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .product-card button:hover {
+            background: #cc6500;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Catalog OnlineShop</h1>
+        <div class="search-box">
+            <input type="text" placeholder="Cari produk...">
+            <button>Cari</button>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- SIDEBAR KATEGORI -->
+        <aside class="sidebar">
+            <h3>Kategori</h3>
+            <ul>
+                <li>Pakaian</li>
+                <li>Elektronik</li>
+                <li>Aksesoris</li>
+                <li>Kecantikan</li>
+                <li>Peralatan Rumah</li>
+                <li>Sepatu</li>
+            </ul>
+        </aside>
+
+        <!-- PRODUK -->
+        <section class="products">
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/220x160" alt="Produk 1">
+                <h4>Produk 1</h4>
+                <p>Rp 75.000</p>
+                <button>Beli</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/220x160" alt="Produk 2">
+                <h4>Produk 2</h4>
+                <p>Rp 120.000</p>
+                <button>Beli</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/220x160" alt="Produk 3">
+                <h4>Produk 3</h4>
+                <p>Rp 45.000</p>
+                <button>Beli</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/220x160" alt="Produk 4">
+                <h4>Produk 4</h4>
+                <p>Rp 200.000</p>
+                <button>Beli</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/220x160" alt="Produk 5">
+                <h4>Produk 5</h4>
+                <p>Rp 33.000</p>
+                <button>Beli</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/220x160" alt="Produk 6">
+                <h4>Produk 6</h4>
+                <p>Rp 99.000</p>
+                <button>Beli</button>
+            </div>
+
+        </section>
+    </div>
+
+</body>
+</html>
